@@ -7,6 +7,8 @@ install -v -m 644 files/fstab "${ROOTFS_DIR}/etc/fstab"
 user_passwd=$(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-8})
 root_passwd=$(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-8})
 
+export FIRST_USER_PASS=$user_passwd
+
 cat <<EOF > ../../deploy/users
 ${user_passwd}
 ${root_passwd}
