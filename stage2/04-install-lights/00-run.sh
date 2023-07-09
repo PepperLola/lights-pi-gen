@@ -9,4 +9,4 @@ fi
 mkdir "${ROOTFS_DIR}/etc/piled"
 mv ./lights/pi/* "${ROOTFS_DIR}/etc/piled"
 rm -rf ./lights
-python3 -m pip install -r "${ROOTFS_DIR}/etc/piled/requirements.txt" --target "${ROOTFS_DIR}/lib/python3/dist-packages"
+python3 -m pip install -r "${ROOTFS_DIR}/etc/piled/requirements.txt" --target "${ROOTFS_DIR}/usr/lib/python3/dist-packages"
