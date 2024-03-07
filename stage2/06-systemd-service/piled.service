@@ -1,8 +1,8 @@
 [Unit]
 Description=PiLED lights service
 
-Wants=network.target
-After=syslog.target network-online.target
+Wants=network-online.target
+After=network.target network-online.target
 
 [Service]
 Type=simple
