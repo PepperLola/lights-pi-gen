@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the RPi image
-      run: ./build.sh
+      run: sudo ./build.sh
