@@ -14,5 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: PWD
+      run: pwd
     - name: Build the RPi image
-      run: ./build-docker.sh
+      run: cd lights-pi-gen && ./build-docker.sh
